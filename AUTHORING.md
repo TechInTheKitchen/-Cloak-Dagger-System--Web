@@ -100,7 +100,7 @@ When changing an action, remove the previous action's extra fields and supply th
 
 ## Text references and ASCII formatting
 
-`numbers.reference` and each letter's `reference` select an excerpt of the live text using exact `start` and `end` markers (start included, end excluded). If you rename the markers in the text, update them in JSON. Missing markers produce an explicit reference warning. `tools/validate-config.cjs` also checks them.
+`numbers.reference` and each letter's `reference` select an excerpt of the live text using exact `start` and `end` markers at the beginning of source lines (optional indentation is allowed) (start included, end excluded). If you rename the markers in the text, update them in JSON. Missing markers produce an explicit reference warning. `tools/validate-config.cjs` also checks them.
 
 Chapter navigation recognizes lines starting `CH.1 -` through `CH.6 -`. Chronicle references recognize `You'll write a Scene`, `You'll write a Report`, `You'll write an Epilogue`, and `That's the whole game.` Keep these markers for the current built-in navigation.
 

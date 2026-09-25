@@ -32,7 +32,7 @@ function button(text,fn,cls){const b=el('button',text,cls);b.type='button';b.onc
 function dialog(title,content,actions=[]){$('dialog-title').textContent=title;$('dialog-body').replaceChildren();if(typeof content==='string')$('dialog-body').append(el('pre',content));else $('dialog-body').append(content);$('dialog-actions').replaceChildren(...actions);if(!$('rule-dialog').open)$('rule-dialog').showModal();}
 function close(){$('rule-dialog').close();}
 $('close-dialog').onclick=close;
-function excerpt(start,end){if(!rules)return 'The original rules could not be loaded. Open the original text or PDF using the links below the workspace.';const a=rules.indexOf(start);if(a<0)return 'Reference not found in '+E.rules.textFile+': '+start+'. Open Rules to read the complete current document.';const b=end?rules.indexOf(end,a+start.length):-1;if(end&&b<0)return 'Reference end marker not found: '+end+'. Open Rules for the complete document.';return rules.slice(a,b<0?undefined:b).trim();}
+function excerpt(start,end){if(!rules)return 'The original rules could not be loaded. Open the original text or PDF using the links below the workspace.';try{return RulesText.extract(rules,start,end);}catch(error){return error.message+'. Open Rules for the complete document.';}}
 function letterRule(ch){const ref=E.rules.letters[ch]?.reference||E.rules.numbers.reference;return excerpt(ref.start,ref.end);}
 async function showCharacterReference(ch){if(await refreshRules())dialog('UUID / '+ch,letterRule(ch));}
 

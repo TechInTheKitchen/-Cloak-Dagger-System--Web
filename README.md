@@ -1,6 +1,6 @@
 # cloak\dagger\system — local web client
 
-Unofficial solo play interface for Ruminastro's game, version 0.5. The PDF is unchanged. The text file has had its whitespace restored from the PDF, with every non-whitespace character preserved. The previous extraction is in `reference/original-extraction.txt`. Original game © 2026 Ruminastro, CC BY-NC 4.0. The original game's statement about being human-made describes the game, not this web adaptation.
+Unofficial solo play interface for Ruminastro's game, version 0.5. The PDF is unchanged. The text file has had its whitespace restored from the PDF, with every non-whitespace character preserved.
 
 ## License, original attribution, and written approval
 

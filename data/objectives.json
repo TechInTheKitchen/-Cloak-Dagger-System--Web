@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "revision": "ruminastro-0.5",
+  "majorUnlockBasicCompletions": 4,
+  "objectives": [
+    {
+      "id": "refine-plan",
+      "name": "Refine the plan",
+      "kind": "basic",
+      "size": 3,
+      "stat": "either",
+      "effects": [
+        {
+          "type": "adjust",
+          "stat": "cloak",
+          "amount": 1
+        },
+        {
+          "type": "adjust",
+          "stat": "dagger",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "smuggle-hardware",
+      "name": "Smuggle in compromised hardware",
+      "kind": "basic",
+      "size": 3,
+      "stat": "dagger",
+      "effects": [
+        {
+          "type": "adjust",
+          "stat": "cloak",
+          "amount": 1
+        },
+        {
+          "type": "adjust",
+          "stat": "risk",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "microdrone-scouting",
+      "name": "Microdrone-assisted scouting",
+      "kind": "basic",
+      "size": 3,
+      "stat": "cloak",
+      "effects": [
+        {
+          "type": "adjust",
+          "stat": "dagger",
+          "amount": 1
+        },
+        {
+          "type": "adjust",
+          "stat": "risk",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "cover-tracks",
+      "name": "Cover your tracks",
+      "kind": "basic",
+      "size": 2,
+      "stat": "dagger",
+      "effects": [
+        {
+          "type": "adjust",
+          "stat": "risk",
+          "amount": -1
+        }
+      ]
+    },
+    {
+      "id": "zombie-computers",
+      "name": "Secure zombie computers",
+      "kind": "basic",
+      "size": 2,
+      "stat": "cloak",
+      "effects": [
+        {
+          "type": "adjust",
+          "stat": "risk",
+          "amount": -1
+        }
+      ]
+    },
+    {
+      "id": "scorched-earth",
+      "name": "Scorched earth cyber-tactics",
+      "kind": "basic",
+      "size": 1,
+      "stat": "cloak",
+      "effects": [
+        {
+          "type": "adjust",
+          "stat": "opsec",
+          "amount": 1
+        },
+        {
+          "type": "burnNextField"
+        }
+      ]
+    },
+    {
+      "id": "disrupt-panopticon",
+      "name": "DISRUPT THE PANOPTICON",
+      "kind": "major",
+      "size": 2,
+      "stat": "cloak",
+      "effects": [
+        {
+          "type": "adjust",
+          "stat": "opsec",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "popular-defense",
+      "name": "POPULAR DEFENSE GROUPS",
+      "kind": "major",
+      "size": 2,
+      "stat": "dagger",
+      "effects": [
+        {
+          "type": "adjust",
+          "stat": "dagger",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "televise-revolution",
+      "name": "TELEVISE THE REVOLUTION",
+      "kind": "major",
+      "size": 1,
+      "stat": "either",
+      "effects": []
+    }
+  ]
+}

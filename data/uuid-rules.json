@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "revision": "ruminastro-0.5",
+  "textFile": "cloak dagger system.txt",
+  "terminalLineDelayMs": 140,
+  "move": {
+    "successTotal": 16,
+    "successBoxes": 1,
+    "failureRisk": 1
+  },
+  "risk": {
+    "lockAt": 16,
+    "minimum": null,
+    "flawIncrement": 1,
+    "attritionOpsec": 1,
+    "attritionStat": 1
+  },
+  "opsec": {
+    "start": 4,
+    "maximum": 4,
+    "loseAt": 0
+  },
+  "exhaustion": {
+    "risk": 1
+  },
+  "numbers": {
+    "multiplier": 1,
+    "reference": {
+      "start": "0-9 =",
+      "end": "a ="
+    }
+  },
+  "letters": {
+    "a": {
+      "name": "amplify",
+      "action": "amplify",
+      "boxes": 2,
+      "reference": {
+        "start": "a =",
+        "end": "b ="
+      }
+    },
+    "b": {
+      "name": "burn",
+      "action": "extend",
+      "variableMultiplier": 1,
+      "reference": {
+        "start": "b =",
+        "end": "c ="
+      }
+    },
+    "c": {
+      "name": "chronicle",
+      "action": "chronicle",
+      "scenes": 1,
+      "resolveImmediately": true,
+      "reference": {
+        "start": "c =",
+        "end": "d ="
+      }
+    },
+    "d": {
+      "name": "double",
+      "action": "double",
+      "multiplier": 2,
+      "reference": {
+        "start": "d =",
+        "end": "e ="
+      }
+    },
+    "e": {
+      "name": "extract",
+      "action": "extract",
+      "reference": {
+        "start": "e =",
+        "end": "f ="
+      }
+    },
+    "f": {
+      "name": "fours",
+      "action": "sweep",
+      "digit": "4",
+      "emptyTotal": -4,
+      "reference": {
+        "start": "f =",
+        "end": "(That's"
+      }
+    }
+  },
+  "setup": {
+    "wing": [
+      {
+        "label": "Secondary importance",
+        "cloak": 3,
+        "dagger": 2,
+        "risk": 0
+      },
+      {
+        "label": "Equal part of the group",
+        "cloak": 3,
+        "dagger": 3,
+        "risk": 2
+      },
+      {
+        "label": "Preponderant and rowdy",
+        "cloak": 3,
+        "dagger": 4,
+        "risk": 4
+      }
+    ],
+    "structure": [
+      {
+        "label": "Centralized vanguard",
+        "objective": "refine-plan",
+        "boxes": 2,
+        "risk": 0
+      },
+      {
+        "label": "Alliance of local groups",
+        "objective": "popular-defense",
+        "boxes": 1,
+        "risk": 1
+      },
+      {
+        "label": "Federation of free individuals",
+        "objective": "cover-tracks",
+        "boxes": 1,
+        "risk": 0
+      }
+    ],
+    "flaw": [
+      {
+        "label": "Hesitancy",
+        "letters": "ab"
+      },
+      {
+        "label": "Messianic egomania",
+        "letters": "cd"
+      },
+      {
+        "label": "Paranoia",
+        "letters": "ef"
+      }
+    ]
+  }
+}

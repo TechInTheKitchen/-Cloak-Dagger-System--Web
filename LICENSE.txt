@@ -1,0 +1,39 @@
+CLOAK DAGGER SYSTEM — WEB ADAPTATION
+License, attribution, and permission notice
+
+WEB ADAPTATION
+Original contributions to this web adaptation are licensed under Creative
+Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0).
+https://creativecommons.org/licenses/by-nc/4.0/
+Full legal terms: https://creativecommons.org/licenses/by-nc/4.0/legalcode.en
+
+ORIGINAL GAME
+cloak\dagger\system, version 0.5
+Copyright (c) 2026 Ruminastro
+Creator: https://ruminastro.itch.io/
+Original license: CC BY-NC 4.0
+https://creativecommons.org/licenses/by-nc/4.0/
+
+The supplied original game text and PDF retain their original wording,
+copyright, license, and credits. See "cloak dagger system.txt" and
+"cloak dagger system.pdf" in this folder.
+
+ADAPTATION AND WRITTEN APPROVAL
+The project maintainer has obtained written approval from
+Ruminastro to try adapting the game into a web-based client. This notice
+records that permission as reported by the maintainer; the correspondence
+itself has not been supplied with this project or reproduced here. No
+additional permission terms, approval date, or endorsement are asserted.
+
+This unofficial adaptation adds a browser interface, automated UUID and
+rules handling, a formatted scratchpad, local saves, and a terminal-style
+presentation. Implementation interpretations are documented in README.md.
+The original game wording is unchanged. The text extraction whitespace has
+been restored from the PDF; the previous extraction is retained in
+reference/original-extraction.txt. The original PDF is unchanged.
+
+EXISTING HOSTING COMPONENTS
+The server and launcher adapted from Obsidian GitHub Web Hosting retain
+their original MIT license and copyright notice in HOSTING-LICENSE.txt.
+That notice is preserved for those pre-existing components; the original
+game and new adaptation contributions are covered by CC BY-NC 4.0 as above.

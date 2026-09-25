@@ -1,0 +1,367 @@
+A Short, Abstruse, Experimental Solo TTRPG About Hacktivism And Revolution [Version 0.5]
+(c) 2026 Ruminastro. Licensed under CC BY-NC 4.0 (you may hack/expand on/distribute this, just keep it free & credit me).
+
+cloak\dagger\system>
+cloak\dagger\system>more README.txt
+-----------------------------------------------------------------------------------------------------------------------------
+
+########   #####   ########  ######## ##     ##          #######    #####   ##         #######   ##
+##        ##   ##  ##     ##    ##    ##     ##                ## ##   #### ##    ##  ##         ##
+######   ##     ## ########     ##    #########  ##      #######  ## ### ## ##    ##  ########
+##       ######### ##    ##     ##    ##     ##  ##     ##        ####   ## ######### ##     ##  ##
+######## ##     ## ##     ##    ##    ##     ## ##      #########   #####         ##   #######   ##
+
+In 2046, wealth and technology are used not for the common good but to strengthen the owners of capital and the armed bodies
+that protect them.
+
+On the one hand the rich have more institutional influence than ever before: they whisper into the politicians' ears, and
+immediately new limitations are imposed on the freedom of movement, the freedom of assembly, and the right to privacy.
+Pretexts vary: domestic security; militarization; protectionist or anti-migrant bullsh*t; even --- most tragically ---
+environmental concerns. These measures only ever seem to affect workers and the poor: the rich are free to traverse the skies
+and the oceans on their jets and cruises.
+
+On the other hand, the authorities have mastered the use of AI-assisted surveillance systems, spy-drones, and psychological
+warfare in order to combat dissent. At this point, everyone who's not a part of the ruling class believes some kind of
+revolution is needed; these repressive tools are the only things keeping the people from tearing the whole [system] down.
+
+There are a few factions that wish to facilitate a revolution, though none are flawless in praxis or in morals. One such
+organization is [cloak\dagger] --- a coalition of hackers and self-trained soldiers that has managed to gather members
+internationally while remaining only a myth --- or a boogeyman --- to government agencies.
+
+That's you, and you're about to enact your riskiest plan yet. Don't get caught before you're ready for a showdown.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+########  ########   #####   ########  ###   ### ########  ##
+##     ## ##        ##   ##  ##     ## #### #### ##        ##
+########  ######   ##     ## ##     ## ## ### ## ######
+##    ##  ##       ######### ##     ## ##     ## ##        ##
+##     ## ######## ##     ## ########  ##     ## ########  ##
+
+This game is Human-made without AI. It is intended for solo play. It was developed for the "Game Jam 3000" hosted by the
+"Rules As Written" Discord community, a space dedicated to TTRPG design discussion.
+
+In keeping with the "Unconventional Resolution Mechanics" theme, this game uses Version 4 UUIDs as the basis of its engine.
+-- Page 1 of 8 --
+
+DISCLAIMER: this game is ideological, but do not assume every aspect of [cloak\dagger]'s ideology matches the author's. It's
+also not a good game... it's a design experiment.
+
+cloak\dagger\system>more RULES.txt
+
+CH.1 -
+ #######  ##     ## ######## ########  ##     ## #### ######## ##      ##  ##
+##     ## ##     ## ##       ##     ## ##     ##  ##  ##       ##  ##  ##  ##
+##     ##  ##   ##  ######   ########   ##   ##   ##  ######   ##  ##  ##
+##     ##   ## ##   ##       ##    ##    ## ##    ##  ##       ##  ##  ##  ##
+ #######     ###    ######## ##     ##    ###    #### ########  ###  ###   ##
+
+Here's a summary of the game's structure and rules:
+
+The game itself can be divided into three parts. 1) Setup; 2) Tactical Mode; and 3) Chronicle Mode (which includes Scenes,
+Reports, and the Epilogue).
+
+Here's a summary of what you'll find in the next chapters:
+
+"CH.2 - READING A UUID:" contains instructions on how to interpret a Version 4 UUID for the purposes of this game. In short:
+you read them from left to right and burn a few alphanumerical characters each time you pursue one of your objectives.
+
+"CH.3 - VARIABLES:" explains what variables are. In short: it's your stats + the timer for the defeat condition.
+
+"CH.4 - SETUP:" contains the procedure used for determining your variables for the Tactical Mode of play; plus the procedure
+used for creating setting details and personages for the Chronicle Mode of play.
+
+"CH.5 - OBJECTIVES:" contains information on the Tactical Mode of the game. In short: each turn you do a MOVE to advance one
+of your objectives; you complete BASIC OBJECTIVES to gain advantages and to unlock the MAJOR OBJECTIVES; and you complete
+MAJOR OBJECTIVES to win.
+
+"CH.6 - CHRONICLE:" contains information on the Chronicle Mode of the game.
+
+Read each chapter in order and you'll get it. Just know that some chapters use formulas like [variable = n], [variable += n],
+and [variable -= n]. Those simply mean "set the value of the specified variable to number", "raise the value of the specified
+variable by number", and "lower the value of the specified variable by number" respectively. For example, [cloak += 1] means
+"raise cloak by 1".
+
+CH.2 -
+########  ########   #####   ########  #### ##    ##  ######        #####      ##     ## ##     ## #### ########   ##
+##     ## ##        ##   ##  ##     ##  ##  ###   ## ##            ##   ##     ##     ## ##     ##  ##  ##     ##  ##
+########  ######   ##     ## ##     ##  ##  ## ## ## ##   ####    ##     ##    ##     ## ##     ##  ##  ##     ##
+##    ##  ##       ######### ##     ##  ##  ##   ### ##    ##     #########    ##     ## ##     ##  ##  ##     ##  ##
+##     ## ######## ##     ## ########  #### ##    ##  ######      ##     ##     #######   #######  #### ########   ##
+-- Page 2 of 8 --
+
+
+The game utilizes a Version 4 UUID generator as the basis of its engine. You'll find websites hosting such generators by
+searching "UUID v4 generator" on any browser. Each time you need to generate a new UUID, click the [Generate] or [Refresh]
+button --- there's usually one --- or reload the page. You'll also need a virtual document or a piece of paper to write down
+your variables, the UUIDs you generate, and strike through "burned" (used) characters.
+
+Here are four examples of Version 4 UUIDs. Let's learn how to read them for the purposes of this game.
+
+1)  ba7e2ade-3b97-43e9-9798-784c79af904f       3)  3678185e-29c3-472a-bdd2-b299425f29c7
+2)  57a77fac-876e-409a-9d98-a73a0a1a86dc       4)  5ecd4ba6-4afe-4f57-9631-7e1b4f25a3d6
+
+- Notice that each UUID is composed of five blocks named "fields" of length 8, 4, 4, 4, and 12, separated by dashes.
+- Notice that each UUID is unique, except for the number at the start of the 3rd field, which is always a 4 (for Version 4).
+- Notice that UUIDs only contain letters from "a" to "f".
+
+First off, read from left to right. You must burn characters on the left before accessing those on the right. It's kind of
+like a deck of cards: you must draw the cards at the top of the deck before getting to the ones at the bottom.
+
+Dashes are ignored; alphanumeric characters are resources. You will burn them each time you make a MOVE to advance your
+objectives.
+
+Numbers are read as they are and added together to reach a TOTAL.
+
+When you get to a letter you must either stop there or burn it to proceed. Each letter has a special effect. Sometimes
+burning a letter is plainly beneficial --- other times you may want to save the benefit for your next MOVE, or postpone any
+undesired effects.
+
+The number of characters you can read and burn at any given time depends primarily on the variable you're using to pursue
+your current objective.
+
+Here's a legend for quick reference, with a description of the effects of each letter:
+0-9 = add this number to the TOTAL.
+a = "amplify" = amplify this MOVE --- if successful, check two boxes instead of one.
+b = "burn" = You may burn a number of additional characters equal to the value of the variable you're using to perform this
+MOVE.
+c = "chronicle" = resolve the MOVE; then enter the Chronicle Mode for a Scene.
+d = "double" = double one of the numbers you're burning as a part of this MOVE. Can't be applied to the same numerical
+character twice in one MOVE.
+e = "extract" = you may create a copy of one unburned character from this UUID (= note it somewhere); you may burn it later
+at any point. You can never store more than 1 copy like this.
+f = "fours" = burn every remaining "4" in your UUID and add it to the TOTAL --- or, if no "4"s remain, subtract 4 from the
+TOTAL.
+
+(That's "amplify - burn - chronicle - double - extract - fours". It's supposed to be mnemonic.)
+-- Page 3 of 8 --
+
+WARNING 1: Two of these letters additionally do [risk += 1] when burned (see Setup Q3). Burning multiple means raising risk
+by multiple points in one go.
+
+WARNING 2: After striking through every character in a UUID, end your MOVE early if necessary; next generate a new UUID and
+write it down; then [risk += 1].
+
+...Speaking of which...
+
+CH.3 -
+##     ##   #####   ########  ####   #####   ########  ##       ########  ######   ##
+##     ##  ##   ##  ##     ##  ##   ##   ##  ##     ## ##       ##       ##        ##
+ ##   ##  ##     ## ########   ##  ##     ## ########  ##       ######    ######
+  ## ##   ######### ##    ##   ##  ######### ##     ## ##       ##             ##  ##
+   ###    ##     ## ##     ## #### ##     ## ########  ######## ########  ######   ##
+
+There are 4 variables you need to keep track of:
+
+- [cloak] represents your skill in breaking down the cyber-defenses of the [system] and in keeping yours running; it's the
+strength of your hacker division.
+
+- [dagger] represents your skill in real-world actions such as infiltration, observation, and, as a last resort, violence;
+it's the strength of your paramilitary division.
+
+- [risk] represents how big the risks you're taking in pursuit of your objectives are. Inevitably, this will grow as the game
+goes on, but if it grows too quickly the authorities will catch up to you, and then... everything will have been for nothing.
+If [risk] reaches 16, ITS VALUE CAN NO LONGER BE MODIFIED. At the start of each subsequent turn do [opsec -= 1], and either
+[cloak -= 1] or [dagger -= 1].
+
+- [opsec] stands for operative security. It always starts at 4 and can never be higher. IF [opsec] REACHES 0, YOU LOSE. ENTER
+CHRONICLE MODE FOR THE EPILOGUE.
+
+You will use either [cloak] or [dagger] when making MOVEs to pursue your objectives.
+
+Aside from [opsec], the variables start at different numeric values depending on the choices you make during setup.
+
+CH.4 -
+ ######  ######## ######## ##     ## ########   ##
+##       ##          ##    ##     ## ##     ##  ##
+ ######  ######      ##    ##     ## ########
+      ## ##          ##    ##     ## ##         ##
+ ######  ########    ##     #######  ##         ##
+
+Most people have never heard of the [cloak\dagger] group. Most people who have, dismiss it as an urban legend. Most people
+who believe it exists, don't know much about how its members operate and think --- they only know rumors and stereotypes.
+-- Page 4 of 8 --
+
+
+As the player, you have the liberty of defining some truths about [cloak\dagger]. Start by answering these questions; then
+feel free to fill in the blanks.
+
+WARNING: these answers cannot be changed later.
+
+Q1 - HOW IMPORTANT OF A FACTOR IS [cloak\dagger]'S PARAMILITARY WING?
+Aside from hackers, [cloak\dagger]'s membership includes footsoldiers and investigators who share the same ultimate goal as
+their comrades who sit behind computer screens. But how large and influential is it?
+- OPTION 1: IT'S OF SECONDARY IMPORTANCE. [cloak = 3] [dagger = 2] [risk = 0].
+- OPTION 2: IT'S AN EQUAL PART OF THE GROUP. [cloak = 3] [dagger = 3] [risk = 2]
+- OPTION 3: IT'S PREPONDERANT --- AND ROWDY AT TIMES. [cloak = 3] [dagger = 4] [risk = 4].
+
+Q2 - WHAT DOES [cloak\dagger]'S INTERNAL STRUCTURE LOOK LIKE?
+[cloak\dagger] is no book club. It's an international conspiracy. How does it remain active, synchronized, and hidden?
+- OPTION 1: MAXIMUM UNITY OF ACTION --- WE'RE A CENTRALIZED VANGUARD ORGANIZATION. Start with 2 boxes checked in the "Refine
+the plan" BASIC OBJECTIVE.
+- OPTION 2: OUR DIFFERENCES MAKE US STRONGER --- WE'RE AN ALLIANCE OF LOCAL GROUPS. Start with 1 box checked in the "POPULAR
+DEFENSE GROUPS" MAJOR OBJECTIVE. [risk += 1]
+- OPTION 3: NO GODS, NO MASTERS --- WE'RE A FEDERATION OF FREE INDIVIDUALS. Start with 1 box checked in the "Cover your
+tracks" BASIC OBJECTIVE.
+
+Q3 - WHAT'S [cloak\dagger]'S MORTAL FLAW?
+Come on now. Everyone has flaws.
+- OPTION 1: ARE WE SURE WE'RE READY FOR THIS? --- HESITANCY. When burning the letter "a" or "b", [risk += 1].
+- OPTION 2: IF NOT WE, THEN WHO? --- MESSIANIC EGOMANIA. When burning the letter "c" or "d", [risk += 1].
+- OPTION 3: TRUST NO ONE --- PARANOIA. When burning the letter "e" or "f", [risk += 1].
+
+Remember to write down the variables you've just defined. Also write down which letters raise [risk] for you when activated.
+
+--------
+
+Next you'll need to define some truths about the setting.
+
+For example, what's the dominant power in the world in 2046? China and the USA are safe bets; but you can go more speculative
+and decide that a third power rose to prominence in the aftermath of a Sino-American war; like a unified Europe or an
+ultramodern India. Don't get nationalistic: a superpower is just the system's most loyal servant. This question's here to
+help you decide where the bulk of the action should be set... though maybe you would prefer [cloak\dagger]'s attacks to
+happen simultaneously across different continents.
+
+Next, what's the geopolitical trend? Is the world on the path to confederalizing under one law, in the name of stability and
+free trade? Maybe it's just the opposite: nations are being carved up into small fiefs managed by wealthy individuals. Or it
+could be neither: national borders have served capitalism well, and they shall be maintained, as they allow the system to
+
+-- Page 5 of 8 --
+
+benefit from conflicts and prejudices. Regardless of what you choose, the world doesn't have to look too different from what
+we all know: reforming the world order is a long process.
+
+Then, what's the favored political mask for the system? In 2046 popular will means almost nothing, but officially most
+countries might still uphold a superficial democracy. Alternatively, they may have turned into enlightened technocracies,
+paying lip service to rational and progressive ideals while still sowing destruction and inequality. Or just make the bad
+guys full on fascists; I know you want to, and that's okay.
+
+--------
+
+Lastly you'll need to create 3 to 6 fictional people who live in this world and who will act as POV characters in your
+Chronicle. These are called personages, in order to avoid confusion with alphanumeric "characters".
+
+Each can be a member of [cloak\dagger]; a powerful individual or an agent of the system; or a civilian who will either
+witness the effects of the two factions' conflict from the sidelines, or attempt to join one of the two sides.
+
+Other than that, each personage needs a nationality, a name, an age, a mood, and a motivation. Not much else. Write down
+these details in the same place where you keep your variables and UUIDs.
+
+Good motivations for [cloak\dagger]-aligned personages include a simple desire for greater personal freedom; a strong sense
+of justice mixed with terrible pride and boredom; or grief for a loved one who was killed by law enforcement or by poverty.
+
+Good motivations for system-aligned personages include greed; a desire to protect one's family above all else; a strong
+belief in social stability or control; or even a disaffected "just following orders" attitude.
+
+Neutral personages could pull motivations from either of the previous lists; have a strong ideological stance against both
+sides; or be too exhausted from work and hardship to fight.
+
+CH.5 -
+ #######  ########        ## ########  ######  ######## #### ##     ## ########  ######   ##
+##     ## ##     ##       ## ##       ##    ##    ##     ##  ##     ## ##       ##        ##
+##     ## ########        ## ######   ##          ##     ##   ##   ##  ######    ######
+##     ## ##     ## ##    ## ##       ##    ##    ##     ##    ## ##   ##             ##  ##
+ #######  ########   ######  ########  ######     ##    ####    ###    ########  ######   ##
+
+After setup, you will enter Tactical Mode, which functions as a sequence of turns. On each turn select an objective to
+advance; then make a MOVE:
+
+Check the variable the objective specifies, and read an amount of unburned characters equal to its value; then burn the
+numbers from left to right and add them to your MOVE's TOTAL. When you reach a letter you can either stop reading or burn the
+letter, activating its effects. Remember to strike through each character you burn.
+- The MOVE is a SUCCESS if the TOTAL is 16 or more. Check 1 objective box.
+- The MOVE is a FAILURE if the TOTAL is 15 or less. [risk += 1]
+
+-- Page 6 of 8 --
+
+A MOVE's TOTAL does not carry over to the next turn in any way.
+
+When all of an objective's boxes are checked, it's completed, and its effects activate. ENTER CHRONICLE MODE FOR A REPORT.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+BASIC OBJECTIVES # always available
+
+[_][_][_] Refine the plan --- use [cloak] or [dagger] --- effect: [cloak += 1] [dagger += 1]
+[_][_][_] Smuggle in compromised hardware --- use [dagger] --- effect: [cloak += 1] [risk +=1]
+[_][_][_] Microdrone-assisted scouting --- use [cloak] --- effect: [dagger += 1] [risk +=1]
+[_][_] Cover your tracks --- use [dagger] --- effect: [risk -= 1]
+[_][_] Secure zombie computers --- use [cloak] --- effect: [risk -= 1]
+[_] Scorched earth cyber-tactics --- use [cloak] --- effect: [opsec += 1]; strike through the field that comes after the
+active field in your UUID, without getting any benefits from it.
+
+
+MAJOR OBJECTIVES # available after completing 4 BASIC OBJECTIVES
+
+[_][_] DISRUPT THE PANOPTICON --- use [cloak] --- effect: [opsec += 2] --- {We'll stun the camera networks and surveillance
+algorithms that fill every corner of the streets and of the internet. The people will take it upon themselves to rip their
+electronic guts out.}
+
+[_][_] POPULAR DEFENSE GROUPS --- use [dagger] --- effect: [dagger += 1] --- {Some of our soldiers will begin forming small
+militias, pulling members from low income neighborhoods.}
+
+[_] TELEVISE THE REVOLUTION --- use [cloak] or [dagger] --- effect: none --- {People are already using their newfound freedom
+the way we expected they would. We'll do what we can to keep their enthusiasm high and broadcast their deeds
+internationally.}
+
+AFTER COMPLETING ALL MAJOR OBJECTIVES, YOU WIN. ENTER CHRONICLE MODE FOR THE EPILOGUE.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+CH.6 -
+ ######  ##     ## ########   #######  ##    ## ####  ######  ##       ########  ##
+##    ## ##     ## ##     ## ##     ## ###   ##  ##  ##    ## ##       ##        ##
+##       ######### ########  ##     ## ## ## ##  ##  ##       ##       ######
+##    ## ##     ## ##    ##  ##     ## ##   ###  ##  ##    ## ##       ##        ##
+ ######  ##     ## ##     ##  #######  ##    ## ####  ######  ######## ########  ##
+
+Chronicle Mode consists in you writing down Scenes, Reports, and eventually the Epilogue. Their purpose is to make the game
+come alive through narrative. They can be of whatever length and quality you desire, as long as you're having fun.
+
+-- Page 7 of 8 --
+
+It's similar to what other solo TTRPGs call journaling, but with more structure.
+
+You'll write a Scene each time you burn the letter "c" in a UUID. First finish your MOVE, then follow this procedure:
+
+1) SCENES SHOULD FEEL PERSONAL AND CINEMATIC. Pick at least one personage through whose point of view you will describe the
+scene. The personage can be a bystander, someone actively working toward your objective, someone working against you, or some
+fourth thing.
+2) Use the name of the MOVE you just made, its outcome, and the level of [risk] to come up with a focal point for the scene:
+an obstacle; something suspicious happening; a new personage, antagonistic to the first, appearing...
+3) Describe the personages' actions and/or inner monologue.
+4) If your MOVE was a SUCCESS, describe a resolution that favors your side: the operation goes smoothly, a new resource is
+acquired, anti-government protests grow, etc. Otherwise, describe a dangerous escalation, a retreat, an agent of the system
+gaining a better understanding of [cloak\dagger]'s plans, or whatever fits.
+
+You'll write a Report each time you complete an objective.
+
+1) REPORTS SHOULD FEEL OBJECTIVE AND BUREAUCRATIC. They're messages through which [cloak\dagger] keeps its members up-to-date
+on their operations.
+2) If your MOVEs in pursuit of this objective were all SUCCESSes, simply describe how the objective was accomplished and what
+advantage this brings to the group.
+3) If any of your MOVEs were FAILUREs, describe what went wrong and what this means for future operations.
+
+You'll write an Epilogue after you win (complete all MAJOR OBJECTIVES) or lose (have [opsec] reach 0).
+
+- If you win while [opsec] is 3 or more, THE EPILOGUE IS HOPEFUL, BUT MOST PEOPLE DON'T UNDERSTAND [cloak\dagger]'S ROLE AND
+LOOK FOR LEADERS ELSEWHERE. system
+- If you win while [opsec] is 2 or less, MAKE THE EPILOGUE TRIUMPHANT, AND DESCRIBE [cloak\dagger] BECOMING THE SYMBOL OF THE
+REVOLUTION.
+- If you lose, THE SYSTEM IS TEMPORARILY STRENGTHENED. [cloak\dagger]-aligned personages will face prison, death, or
+voluntary exile.
+- In any case, describe the feelings and the fate of each personage.
+
+That's the whole game. Thank you for reading.
+
+cloak\dagger\system>
+cloak\dagger\system>more CREDITS.txt
+########### CREDITS: ###########
+#                              #
+#  DESIGN: ruminastro.itch.io  #
+#  ADVICE: fedmar.itch.io      #
+#  FONT: Geist Mono            #
+#                              #
+################################
+
+-- Page 8 of 8 --

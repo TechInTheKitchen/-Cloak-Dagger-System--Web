@@ -1,0 +1,12 @@
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary office-document lock files
+.~lock.*#
+
+
+# Local maintenance and preview tools
+backups/
+
